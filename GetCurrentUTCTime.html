@@ -1,0 +1,24 @@
+<html>
+
+<script>
+function myFunction() {
+
+     	 var d = new Date();
+     	 var utc_offset = d.getTimezoneOffset();
+     	 d.setMinutes(d.getMinutes()+utc_offset);
+     	 console.log("UTC Time : "+d);
+     	 console.log(utc_offset);
+
+     	 var mumbai_offset=5.5*60;
+
+     	 d.setMinutes(d.getMinutes()+mumbai_offset);
+     	 console.log("UTC After:" +d);
+     	 
+  alert("Please check console");
+
+}
+</script>
+<body onload="myFunction()">
+<h1>UTC Time Example</h1>
+</body>
+</html>
